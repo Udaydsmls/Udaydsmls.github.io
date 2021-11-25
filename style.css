@@ -1,0 +1,162 @@
+*,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+        }
+
+        html {
+            overflow-y: scroll;
+        }
+
+        body {
+            background: #c1bdba;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        a {
+            text-decoration: none;
+            color: #1ab188;
+            transition: .5s ease;
+        }
+
+        a:hover {
+            color: #179b77;
+        }
+
+        .form {
+            background: rgba(19, 35, 47, 0.9);
+            padding: 40px;
+            max-width: 55%;
+            margin: 40px auto;
+            border-radius: 4px;
+            box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+        }
+
+        .tab-group {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 40px 0;
+        }
+
+        .tab-group:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .tab-group li a {
+            display: block;
+            text-decoration: none;
+            padding: 15px;
+            background: rgba(160, 179, 176, 0.25);
+            color: #a0b3b0;
+            font-size: 20px;
+            float: left;
+            width: 50%;
+            text-align: center;
+            cursor: pointer;
+            transition: .5s ease;
+        }
+
+        .tab-group li a:hover {
+            background: #179b77;
+            color: #ffffff;
+        }
+
+        .tab-group .active a {
+            background: #1ab188;
+            color: #ffffff;
+        }
+
+        .tab-content>div:last-child {
+            display: none;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            font-weight: 300;
+            margin: 0 0 40px;
+        }
+
+        h2{
+            color: #179b77;;
+        }        
+
+        .button {
+            border: 0;
+            outline: none;
+            border-radius: 6px;
+            padding: 10px 10px;
+            font-size: 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: .1em;
+            background: #1ab188;
+            color: #ffffff;
+            transition: all 0.5s ease;
+            -webkit-appearance: none;
+        }
+
+        .button:hover,
+        .button:focus {
+            background: #179b77;
+            color: #ffffff;
+        }
+
+        .button-block {
+            display: block;
+        }
+
+
+        div {
+            color: #ffffff;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .photo {
+            border-radius: 30px;
+        }
+
+        Pre b, #MyProjects b{
+            float: left;
+            text-decoration: underline;
+            color: #ffffffb7;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: rgba(19, 35, 47, 0.9);
+            margin-top: -8px;
+            margin-left: -7px;
+            margin-right: -6px;
+            box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+        }
+
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a:active {
+            background-color: #1ab188;
+            color: white;
+        } 
+
+        .topnav a.active {
+            background-color: #1ab188;
+            color: white;
+        } 
