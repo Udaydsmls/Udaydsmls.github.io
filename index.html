@@ -1,97 +1,462 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Uday Sonawane</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        .heading {
-            font-size: 30px;
-            text-transform: uppercase;
-            font-weight: 200;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
 </head>
 
 <body>
-    <div class="topnav">
-        <a href="index.html" class="active"><i class="fa fa-fw fa-home"></i>Home</a>
-        <a href="mailto:udayds12mld@gmail.com"><i class="fa fa-fw fa-envelope"></i>Contact</a>
-        <a href="https://drive.google.com/drive/u/1/folders/1M55GZSwr03G_5DCDb_gkb7VVEL36Y2sg"
-            target="_blank"><i class="fa fa-fw fa-paperclip"></i>Resume</a>
-        <a href="https://www.linkedin.com/in/uday-sonawane-0b25261b3/" target="_blank"><i class="fa fa-fw fa-linkedin-square"></i>LinkedIn</a>
+  <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 690" xmlns="http://www.w3.org/2000/svg"
+    class="transition duration-300 ease-in-out delay-150">
+    <style>
+      .path-0 {
+        animation: pathAnim-0 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes pathAnim-0 {
+        0% {
+          d: path("M 0,700 L 0,105 C 57.5506227648292,85.2607966457023 115.1012455296584,65.52159329140461 163,57 C 210.8987544703416,48.47840670859539 249.1456406461956,51.174423480083846 296,63 C 342.8543593538044,74.82557651991615 398.3161918855593,95.78071278825998 460,107 C 521.6838081144407,118.21928721174002 589.5895918115675,119.70272536687631 644,106 C 698.4104081884325,92.29727463312369 739.3254408681711,63.408385744234806 789,77 C 838.6745591318289,90.5916142557652 897.108644715748,146.6637316561845 948,145 C 998.891355284252,143.3362683438155 1042.2399802688371,83.93668763102725 1098,81 C 1153.7600197311629,78.06331236897275 1221.9314342089037,131.5895178197065 1281,145 C 1340.0685657910963,158.4104821802935 1390.0342828955481,131.70524109014676 1440,105 L 1440,700 L 0,700 Z");
+        }
+
+        25% {
+          d: path("M 0,700 L 0,105 C 50.64668886422494,92.95826859045505 101.29337772844988,80.91653718091011 154,84 C 206.70662227155012,87.08346281908989 261.47317795042545,105.29211986681463 321,122 C 380.52682204957455,138.70788013318537 444.81391046984834,153.91498335183132 503,142 C 561.1860895301517,130.08501664816868 613.2711801701813,91.04794672586013 663,83 C 712.7288198298187,74.95205327413987 760.1013688494264,97.89322974472809 801,98 C 841.8986311505736,98.10677025527191 876.3233444321125,75.37913429522752 932,82 C 987.6766555678875,88.62086570477248 1064.6052534221237,124.59023307436183 1129,133 C 1193.3947465778763,141.40976692563817 1245.2556418793931,122.25993340732519 1295,113 C 1344.7443581206069,103.74006659267481 1392.3721790603036,104.3700332963374 1440,105 L 1440,700 L 0,700 Z");
+        }
+
+        50% {
+          d: path("M 0,700 L 0,105 C 57.03203847576766,94.57045258354914 114.06407695153533,84.14090516709828 161,88 C 207.93592304846467,91.85909483290172 244.77573066962634,110.006831915156 298,111 C 351.22426933037366,111.993168084844 420.8330003699592,95.83176717227772 489,81 C 557.1669996300408,66.16823282772228 623.8922678505364,52.66609939573314 666,68 C 708.1077321494636,83.33390060426686 725.597928227895,127.50383524478976 775,127 C 824.402071772105,126.49616475521024 905.7160192378839,81.3185596251079 959,61 C 1012.2839807621161,40.6814403748921 1037.5379948205696,45.22192625477864 1096,54 C 1154.4620051794304,62.77807374522136 1246.1320014798373,75.79373535577754 1309,85 C 1371.8679985201627,94.20626464422246 1405.9339992600812,99.60313232211124 1440,105 L 1440,700 L 0,700 Z");
+        }
+
+        75% {
+          d: path("M 0,700 L 0,105 C 42.559921075348385,111.78426439758294 85.11984215069677,118.56852879516588 134,108 C 182.88015784930323,97.43147120483412 238.08055247256135,69.51014921691947 305,69 C 371.91944752743865,68.48985078308053 450.55794795905786,95.39087433715625 499,109 C 547.4420520409421,122.60912566284375 565.6876556912073,122.92635343445555 610,112 C 654.3123443087927,101.07364656554445 724.6914292761129,78.90371192502158 781,72 C 837.3085707238871,65.09628807497842 879.5466272043409,73.45879886545814 935,70 C 990.4533727956591,66.54120113454186 1059.1220619065236,51.26109261314589 1119,67 C 1178.8779380934764,82.73890738685411 1229.9651251695648,129.4968306819583 1282,141 C 1334.0348748304352,152.5031693180417 1387.0174374152175,128.75158465902086 1440,105 L 1440,700 L 0,700 Z");
+        }
+
+        100% {
+          d: path("M 0,700 L 0,105 C 57.5506227648292,85.2607966457023 115.1012455296584,65.52159329140461 163,57 C 210.8987544703416,48.47840670859539 249.1456406461956,51.174423480083846 296,63 C 342.8543593538044,74.82557651991615 398.3161918855593,95.78071278825998 460,107 C 521.6838081144407,118.21928721174002 589.5895918115675,119.70272536687631 644,106 C 698.4104081884325,92.29727463312369 739.3254408681711,63.408385744234806 789,77 C 838.6745591318289,90.5916142557652 897.108644715748,146.6637316561845 948,145 C 998.891355284252,143.3362683438155 1042.2399802688371,83.93668763102725 1098,81 C 1153.7600197311629,78.06331236897275 1221.9314342089037,131.5895178197065 1281,145 C 1340.0685657910963,158.4104821802935 1390.0342828955481,131.70524109014676 1440,105 L 1440,700 L 0,700 Z");
+        }
+      }
+    </style>
+    <defs>
+      <linearGradient id="gradient" x1="12%" y1="18%" x2="88%" y2="82%">
+        <stop offset="5%" stop-color="#000000"></stop>
+        <stop offset="95%" stop-color="#ff0000"></stop>
+      </linearGradient>
+    </defs>
+    <path
+      d="M 0,700 L 0,105 C 57.5506227648292,85.2607966457023 115.1012455296584,65.52159329140461 163,57 C 210.8987544703416,48.47840670859539 249.1456406461956,51.174423480083846 296,63 C 342.8543593538044,74.82557651991615 398.3161918855593,95.78071278825998 460,107 C 521.6838081144407,118.21928721174002 589.5895918115675,119.70272536687631 644,106 C 698.4104081884325,92.29727463312369 739.3254408681711,63.408385744234806 789,77 C 838.6745591318289,90.5916142557652 897.108644715748,146.6637316561845 948,145 C 998.891355284252,143.3362683438155 1042.2399802688371,83.93668763102725 1098,81 C 1153.7600197311629,78.06331236897275 1221.9314342089037,131.5895178197065 1281,145 C 1340.0685657910963,158.4104821802935 1390.0342828955481,131.70524109014676 1440,105 L 1440,700 L 0,700 Z"
+      stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="0.265"
+      class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 350)"></path>
+    <style>
+      .path-1 {
+        animation: pathAnim-1 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes pathAnim-1 {
+        0% {
+          d: path("M 0,700 L 0,245 C 54.572943642865965,250.35755333579974 109.14588728573193,255.71510667159947 161,264 C 212.85411271426807,272.2848933284005 261.9893944999383,283.4971266494019 314,268 C 366.0106055000617,252.50287335059812 420.8965347145148,210.29638673079293 474,205 C 527.1034652854852,199.70361326920707 578.4244666420028,231.3173264274263 638,240 C 697.5755333579972,248.6826735725737 765.4055987174745,234.43430755950178 812,223 C 858.5944012825255,211.56569244049822 883.9531384880995,202.9454433345665 933,213 C 982.0468615119005,223.0545566654335 1054.7818473301272,251.78391910223218 1110,270 C 1165.2181526698728,288.2160808977678 1202.919472191392,295.9188802565051 1255,290 C 1307.080527808608,284.0811197434949 1373.540263904304,264.54055987174746 1440,245 L 1440,700 L 0,700 Z");
+        }
+
+        25% {
+          d: path("M 0,700 L 0,245 C 59.50755950178814,260.760414354421 119.01511900357627,276.52082870884203 168,283 C 216.98488099642373,289.47917129115797 255.4470834874831,286.67709951905294 314,262 C 372.5529165125169,237.32290048094708 451.19654704649145,190.77077321494636 507,197 C 562.8034529535086,203.22922678505364 595.7667283265508,262.2398076211617 637,274 C 678.2332716734492,285.7601923788383 727.7365396473052,250.26999630040692 790,242 C 852.2634603526948,233.73000369959308 927.2871130842275,252.68020717721052 985,249 C 1042.7128869157725,245.31979282278948 1083.1150080157847,219.009174990751 1122,219 C 1160.8849919842153,218.990825009249 1198.252854852633,245.28309285978543 1251,254 C 1303.747145147367,262.7169071402146 1371.8735725736835,253.8584535701073 1440,245 L 1440,700 L 0,700 Z");
+        }
+
+        50% {
+          d: path("M 0,700 L 0,245 C 48.51231964483907,255.683388827229 97.02463928967813,266.366777654458 147,259 C 196.97536071032187,251.63322234554198 248.41376248612653,226.216278209397 303,215 C 357.58623751387347,203.783721790603 415.32031076581563,206.76810950795414 471,214 C 526.6796892341844,221.23189049204586 580.3049944506105,232.71128375878652 634,229 C 687.6950055493895,225.28871624121348 741.4597114317426,206.38675545689975 791,198 C 840.5402885682574,189.61324454310025 885.8561598224195,191.7416944136145 936,195 C 986.1438401775805,198.2583055863855 1041.1156492785797,202.64646688864227 1107,211 C 1172.8843507214203,219.35353311135773 1249.6812430632629,231.6724380318165 1307,238 C 1364.3187569367371,244.3275619681835 1402.1593784683687,244.66378098409174 1440,245 L 1440,700 L 0,700 Z");
+        }
+
+        75% {
+          d: path("M 0,700 L 0,245 C 61.8000739918609,234.14342089036873 123.6001479837218,223.28684178073746 174,215 C 224.3998520162782,206.71315821926254 263.3994820569737,200.99605376741889 314,203 C 364.6005179430263,205.00394623258111 426.8019237883834,214.72894314958694 487,239 C 547.1980762116166,263.27105685041306 605.392822789493,302.08817363423356 660,288 C 714.607177210507,273.91182636576644 765.6267850536441,206.9183623134789 809,201 C 852.3732149463559,195.0816376865211 888.1000369959304,250.23837711185098 947,273 C 1005.8999630040696,295.761622888149 1087.9730669626342,286.1281292391171 1139,263 C 1190.0269330373658,239.87187076088293 1210.0076951535332,203.24910593168084 1255,198 C 1299.9923048464668,192.75089406831916 1369.9961524232335,218.87544703415958 1440,245 L 1440,700 L 0,700 Z");
+        }
+
+        100% {
+          d: path("M 0,700 L 0,245 C 54.572943642865965,250.35755333579974 109.14588728573193,255.71510667159947 161,264 C 212.85411271426807,272.2848933284005 261.9893944999383,283.4971266494019 314,268 C 366.0106055000617,252.50287335059812 420.8965347145148,210.29638673079293 474,205 C 527.1034652854852,199.70361326920707 578.4244666420028,231.3173264274263 638,240 C 697.5755333579972,248.6826735725737 765.4055987174745,234.43430755950178 812,223 C 858.5944012825255,211.56569244049822 883.9531384880995,202.9454433345665 933,213 C 982.0468615119005,223.0545566654335 1054.7818473301272,251.78391910223218 1110,270 C 1165.2181526698728,288.2160808977678 1202.919472191392,295.9188802565051 1255,290 C 1307.080527808608,284.0811197434949 1373.540263904304,264.54055987174746 1440,245 L 1440,700 L 0,700 Z");
+        }
+      }
+    </style>
+    <defs>
+      <linearGradient id="gradient" x1="12%" y1="18%" x2="88%" y2="82%">
+        <stop offset="5%" stop-color="#000000"></stop>
+        <stop offset="95%" stop-color="#ff0000"></stop>
+      </linearGradient>
+    </defs>
+    <path
+      d="M 0,700 L 0,245 C 54.572943642865965,250.35755333579974 109.14588728573193,255.71510667159947 161,264 C 212.85411271426807,272.2848933284005 261.9893944999383,283.4971266494019 314,268 C 366.0106055000617,252.50287335059812 420.8965347145148,210.29638673079293 474,205 C 527.1034652854852,199.70361326920707 578.4244666420028,231.3173264274263 638,240 C 697.5755333579972,248.6826735725737 765.4055987174745,234.43430755950178 812,223 C 858.5944012825255,211.56569244049822 883.9531384880995,202.9454433345665 933,213 C 982.0468615119005,223.0545566654335 1054.7818473301272,251.78391910223218 1110,270 C 1165.2181526698728,288.2160808977678 1202.919472191392,295.9188802565051 1255,290 C 1307.080527808608,284.0811197434949 1373.540263904304,264.54055987174746 1440,245 L 1440,700 L 0,700 Z"
+      stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="0.4"
+      class="transition-all duration-300 ease-in-out delay-150 path-1" transform="rotate(-180 720 350)"></path>
+    <style>
+      .path-2 {
+        animation: pathAnim-2 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes pathAnim-2 {
+        0% {
+          d: path("M 0,700 L 0,385 C 64.6733752620545,389.43783450487115 129.346750524109,393.87566900974224 176,394 C 222.653249475891,394.12433099025776 251.2863731656184,389.9351584659021 304,379 C 356.7136268343816,368.0648415340979 433.50775681341725,350.3836971266494 497,346 C 560.4922431865828,341.6163028733506 610.6825995807127,350.5300530275003 653,348 C 695.3174004192873,345.4699469724997 729.7618448637317,331.4960907633494 784,336 C 838.2381551362683,340.5039092366506 912.2700209643604,363.4855839191023 974,377 C 1035.7299790356396,390.5144160808977 1085.1580712788261,394.5615735602417 1131,388 C 1176.8419287211739,381.4384264397583 1219.0976939203354,364.2681218399309 1270,362 C 1320.9023060796646,359.7318781600691 1380.4511530398322,372.36593908003454 1440,385 L 1440,700 L 0,700 Z");
+        }
+
+        25% {
+          d: path("M 0,700 L 0,385 C 40.264742878283386,397.493032433099 80.52948575656677,409.98606486619803 138,402 C 195.47051424343323,394.01393513380197 270.1467998520163,365.54877296830676 331,350 C 391.8532001479837,334.45122703169324 438.8833148353682,331.8188432605747 487,349 C 535.1166851646318,366.1811567394253 584.3199408065113,403.1758539893945 636,394 C 687.6800591934887,384.8241460106055 741.8369219385867,329.4777407818473 792,338 C 842.1630780614133,346.5222592181527 888.3323714391419,418.91318288321617 945,428 C 1001.6676285608581,437.08681711678383 1068.8335923048464,382.86952768528795 1130,374 C 1191.1664076951536,365.13047231471205 1246.3332593414725,401.60870637563204 1297,411 C 1347.6667406585275,420.39129362436796 1393.8333703292637,402.695646812184 1440,385 L 1440,700 L 0,700 Z");
+        }
+
+        50% {
+          d: path("M 0,700 L 0,385 C 47.78685411271428,354.9145640646195 95.57370822542856,324.8291281292391 145,344 C 194.42629177457144,363.1708718707609 245.49202121100012,431.59805154766303 304,435 C 362.5079787889999,438.40194845233697 428.458206930571,376.77866568010853 482,371 C 535.541793069429,365.22133431989147 576.675151066716,415.2872857319028 635,426 C 693.324848933284,436.7127142680972 768.8411888025652,408.0721913922802 818,401 C 867.1588111974348,393.9278086077198 889.9600937230238,408.4239486989764 932,411 C 974.0399062769762,413.5760513010236 1035.31843630534,404.23201381181406 1093,402 C 1150.68156369466,399.76798618818594 1204.7661610556172,404.64799605376743 1262,403 C 1319.2338389443828,401.35200394623257 1379.6169194721915,393.1760019731163 1440,385 L 1440,700 L 0,700 Z");
+        }
+
+        75% {
+          d: path("M 0,700 L 0,385 C 44.20066592674807,405.48962880749787 88.40133185349615,425.97925761499573 139,426 C 189.59866814650385,426.02074238500427 246.59533851276353,405.572598347515 296,402 C 345.40466148723647,398.427401652485 387.2173140954495,411.73034899494394 451,421 C 514.7826859045505,430.26965100505606 600.5354051054385,435.50600567270936 656,414 C 711.4645948945615,392.49399432729064 736.641065482797,344.2456283142188 778,346 C 819.358934517203,347.7543716857812 876.9003329633739,399.5114810704156 936,425 C 995.0996670366261,450.4885189295844 1055.7576026637073,449.7084474041189 1107,433 C 1158.2423973362927,416.2915525958811 1200.069256381798,383.65472931310893 1254,373 C 1307.930743618202,362.34527068689107 1373.965371809101,373.67263534344556 1440,385 L 1440,700 L 0,700 Z");
+        }
+
+        100% {
+          d: path("M 0,700 L 0,385 C 64.6733752620545,389.43783450487115 129.346750524109,393.87566900974224 176,394 C 222.653249475891,394.12433099025776 251.2863731656184,389.9351584659021 304,379 C 356.7136268343816,368.0648415340979 433.50775681341725,350.3836971266494 497,346 C 560.4922431865828,341.6163028733506 610.6825995807127,350.5300530275003 653,348 C 695.3174004192873,345.4699469724997 729.7618448637317,331.4960907633494 784,336 C 838.2381551362683,340.5039092366506 912.2700209643604,363.4855839191023 974,377 C 1035.7299790356396,390.5144160808977 1085.1580712788261,394.5615735602417 1131,388 C 1176.8419287211739,381.4384264397583 1219.0976939203354,364.2681218399309 1270,362 C 1320.9023060796646,359.7318781600691 1380.4511530398322,372.36593908003454 1440,385 L 1440,700 L 0,700 Z");
+        }
+      }
+    </style>
+    <defs>
+      <linearGradient id="gradient" x1="12%" y1="18%" x2="88%" y2="82%">
+        <stop offset="5%" stop-color="#000000"></stop>
+        <stop offset="95%" stop-color="#ff0000"></stop>
+      </linearGradient>
+    </defs>
+    <path
+      d="M 0,700 L 0,385 C 64.6733752620545,389.43783450487115 129.346750524109,393.87566900974224 176,394 C 222.653249475891,394.12433099025776 251.2863731656184,389.9351584659021 304,379 C 356.7136268343816,368.0648415340979 433.50775681341725,350.3836971266494 497,346 C 560.4922431865828,341.6163028733506 610.6825995807127,350.5300530275003 653,348 C 695.3174004192873,345.4699469724997 729.7618448637317,331.4960907633494 784,336 C 838.2381551362683,340.5039092366506 912.2700209643604,363.4855839191023 974,377 C 1035.7299790356396,390.5144160808977 1085.1580712788261,394.5615735602417 1131,388 C 1176.8419287211739,381.4384264397583 1219.0976939203354,364.2681218399309 1270,362 C 1320.9023060796646,359.7318781600691 1380.4511530398322,372.36593908003454 1440,385 L 1440,700 L 0,700 Z"
+      stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="0.53"
+      class="transition-all duration-300 ease-in-out delay-150 path-2" transform="rotate(-180 720 350)"></path>
+    <style>
+      .path-3 {
+        animation: pathAnim-3 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes pathAnim-3 {
+        0% {
+          d: path("M 0,700 L 0,525 C 48.39812553952399,498.79647305463067 96.79625107904798,472.59294610926133 158,486 C 219.20374892095202,499.40705389073867 293.2131212233321,552.4246886175854 348,570 C 402.7868787766679,587.5753113824146 438.35126402762364,569.7082994203971 490,554 C 541.6487359723764,538.2917005796029 609.3818226661732,524.7421137008263 654,520 C 698.6181773338268,515.2578862991737 720.1214453076831,519.3232457762979 776,528 C 831.8785546923169,536.6767542237021 922.1323961030951,549.964903193982 984,550 C 1045.867603896905,550.035096806018 1079.348970279936,536.8171414477741 1127,542 C 1174.651029720064,547.1828585522259 1236.471722777161,570.7665310149217 1291,571 C 1345.528277222839,571.2334689850783 1392.7641386114196,548.1167344925391 1440,525 L 1440,700 L 0,700 Z");
+        }
+
+        25% {
+          d: path("M 0,700 L 0,525 C 65.30487113084227,526.205623381428 130.60974226168454,527.4112467628561 179,532 C 227.39025773831546,536.5887532371439 258.86590208410405,544.5606363300037 303,545 C 347.13409791589595,545.4393636699963 403.9266494018991,538.346207917129 460,545 C 516.0733505981009,551.653792082871 571.4275003082995,572.0545320014799 620,558 C 668.5724996917005,543.9454679985201 710.3633493649031,495.4356640769515 771,482 C 831.6366506350969,468.5643359230485 911.1191022320879,490.20281169071393 971,513 C 1030.880897767912,535.7971883092861 1071.1602417067456,559.7530891601925 1126,566 C 1180.8397582932544,572.2469108398075 1250.2399309409298,560.7848316685164 1305,551 C 1359.7600690590702,541.2151683314836 1399.8800345295351,533.1075841657419 1440,525 L 1440,700 L 0,700 Z");
+        }
+
+        50% {
+          d: path("M 0,700 L 0,525 C 47.26743124922925,536.2771488469602 94.5348624984585,547.5542976939204 153,549 C 211.4651375015415,550.4457023060796 281.12798125539524,542.0599580712789 343,546 C 404.87201874460476,549.9400419287211 458.9532124799605,566.2058700209643 500,570 C 541.0467875200395,573.7941299790357 569.0591688247625,565.1165618448638 621,565 C 672.9408311752375,564.8834381551362 748.810112220989,573.3278825995807 805,577 C 861.189887779011,580.6721174004193 897.7003822912814,579.5719077568134 957,560 C 1016.2996177087186,540.4280922431866 1098.3883586138859,502.38448637316566 1147,501 C 1195.6116413861141,499.61551362683434 1210.7461832531753,534.8901467505241 1254,545 C 1297.2538167468247,555.1098532494759 1368.6269083734123,540.054926624738 1440,525 L 1440,700 L 0,700 Z");
+        }
+
+        75% {
+          d: path("M 0,700 L 0,525 C 58.60727586632137,533.625921815267 117.21455173264275,542.251843630534 168,525 C 218.78544826735725,507.748156369466 261.7490689357504,464.6185472931311 318,473 C 374.2509310642496,481.3814527068689 443.78917252435565,541.2739671969417 496,566 C 548.2108274756444,590.7260328030583 583.0942409668271,580.2855839191022 638,562 C 692.9057590331729,543.7144160808978 767.8338636083364,517.5836971266494 827,520 C 886.1661363916636,522.4163028733506 929.5703045998275,553.3796275743001 973,547 C 1016.4296954001725,540.6203724256999 1059.884917992354,496.8977925761499 1113,488 C 1166.115082007646,479.1022074238501 1228.890023430756,505.02920212110007 1285,517 C 1341.109976569244,528.9707978788999 1390.5549882846221,526.98539893945 1440,525 L 1440,700 L 0,700 Z");
+        }
+
+        100% {
+          d: path("M 0,700 L 0,525 C 48.39812553952399,498.79647305463067 96.79625107904798,472.59294610926133 158,486 C 219.20374892095202,499.40705389073867 293.2131212233321,552.4246886175854 348,570 C 402.7868787766679,587.5753113824146 438.35126402762364,569.7082994203971 490,554 C 541.6487359723764,538.2917005796029 609.3818226661732,524.7421137008263 654,520 C 698.6181773338268,515.2578862991737 720.1214453076831,519.3232457762979 776,528 C 831.8785546923169,536.6767542237021 922.1323961030951,549.964903193982 984,550 C 1045.867603896905,550.035096806018 1079.348970279936,536.8171414477741 1127,542 C 1174.651029720064,547.1828585522259 1236.471722777161,570.7665310149217 1291,571 C 1345.528277222839,571.2334689850783 1392.7641386114196,548.1167344925391 1440,525 L 1440,700 L 0,700 Z");
+        }
+      }
+    </style>
+    <defs>
+      <linearGradient id="gradient" x1="12%" y1="18%" x2="88%" y2="82%">
+        <stop offset="5%" stop-color="#000000"></stop>
+        <stop offset="95%" stop-color="#ff0000"></stop>
+      </linearGradient>
+    </defs>
+    <path
+      d="M 0,700 L 0,525 C 48.39812553952399,498.79647305463067 96.79625107904798,472.59294610926133 158,486 C 219.20374892095202,499.40705389073867 293.2131212233321,552.4246886175854 348,570 C 402.7868787766679,587.5753113824146 438.35126402762364,569.7082994203971 490,554 C 541.6487359723764,538.2917005796029 609.3818226661732,524.7421137008263 654,520 C 698.6181773338268,515.2578862991737 720.1214453076831,519.3232457762979 776,528 C 831.8785546923169,536.6767542237021 922.1323961030951,549.964903193982 984,550 C 1045.867603896905,550.035096806018 1079.348970279936,536.8171414477741 1127,542 C 1174.651029720064,547.1828585522259 1236.471722777161,570.7665310149217 1291,571 C 1345.528277222839,571.2334689850783 1392.7641386114196,548.1167344925391 1440,525 L 1440,700 L 0,700 Z"
+      stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="1"
+      class="transition-all duration-300 ease-in-out delay-150 path-3" transform="rotate(-180 720 350)"></path>
+  </svg>
+  <nav id="desktop-nav">
+    <div class="logo">Uday Sonawane</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
-
-    <div class="form" style="max-height: auto;">
-        <div style="text-align: center;" >
-                <h1 style="color: #20daa8; text-align: center; margin-bottom: -5px;"><b>UDAY SONAWANE</b></h1>
-        </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Uday Sonawane</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
     </div>
-    <div class="row">
-        <div class="form" style="text-align: center;">
-            <ul class="tab-group">
-                <li class="tab active"><a href="#AboutMe">About Me</a></li>
-                <li class="tab"><a href="#MyProjects">My Projects</a></li>
-            </ul>
-
-            <div class="tab-content">
-                <div id="AboutMe">
-                    <h2>Info about me!!</h2>
-                    <div>A Data Science and Machine Learning enthusiast who hopes to advance in these fields as
-                        opportunities present themselves.
-                    </div> <br>
-                    <div>
-                        <b>University:</b> Vellore Institute of Technology, Vellore<br>
-                        <b>Branch:</b> Computer Science and Engineering <br>
-                        <b>Degree:</b> BTech<br>
-                    </div>
-                    <br><br>
-
-                </div>
-
-                <div id="MyProjects">
-                    <h2>Some of my Projects!!</h2>
-                    <div>
-                        <b>Prediction of COVID-19</b><br><br>
-                        In this project, I attempted to forecast the growth rate of viruses and the number of cases that
-                        would exist after a certain period of time.
-                        <br><br><b>Using AI to play Flappy Bird</b><br><br>
-                        I used NEAT in this project to train an AI to play Flappy Bird. In this project, I had to create
-                        both a game and the AI training sequence.
-                        <br><br><b>Spam EMail Detection using AI</b><br><br>
-                        In this project, I used CounterVectorizer and NaiveBayes to detect spam emails.
-                    </div><br><br>
-
-                    <a href="https://github.com/Udaydsmls" class="button" target="_blank">View Projects</a>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="form" style="text-align: center;">
-            <img src="me2.jpg" class="photo" alt="I" width="400" height="500">
-        </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/file2.png" alt="Uday Sonawane profile picture" class="profile" />
     </div>
-
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script>
-
-        $('.tab a').on('click', function (e) {
-
-            e.preventDefault();
-
-            $(this).parent().addClass('active');
-            $(this).parent().siblings().removeClass('active');
-
-            target = $(this).attr('href');
-
-            $('.tab-content > div').not(target).hide();
-
-            $(target).fadeIn(600);
-
-        });</script>
-
-
-
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Uday Sonawane</h1>
+      <p class="section__text__p2">A STUDENT</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/uday_sonawane_resume.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="window.open('https://www.linkedin.com/in/uday-sonawane-0b25261b3/')" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="window.open('https://github.com/Udaydsmls')" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <!-- <div class="section__pic-container">
+        <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
+      </div> -->
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon-invert" />
+            <h3>Experience</h3>
+            <p>10 Months <br /> Internship in Data Science and Software Engineering </p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon-invert" />
+            <h3>Education</h3>
+            <p>B.Tech. Computer Science 2019 - 2023<br />M.Sc. Computer Science 2024 - Present</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            I am a passionate enthusiast of Data Science and Machine Learning, driven by a relentless curiosity and a
+            desire to advance in these dynamic fields as opportunities arise.
+            <br /><br />
+            In our interconnected world, the influence of data science is profound and pervasive—from securing mobile
+            devices to predicting weather patterns. This widespread application has captivated my imagination and
+            sparked my curiosity about the potential limitations of this technology, the challenges it may face, and its
+            future trajectory. I am determined to confront any obstacles in my path, embracing every opportunity to
+            delve deeper into this field and broaden my understanding.
+            <br /><br />
+            Programming and innovation have always been central to my aspirations, and immersing myself in the world of
+            coding has been a dream come true. My inquisitive nature and eagerness to learn have enabled me to explore
+            diverse areas of knowledge and experience.
+            <br /><br />
+            I find immense joy in continuously learning and embracing new experiences. I actively seek out opportunities
+            for career growth and personal development. My proactive mindset and effective time management skills help
+            me stay ahead, ensuring I make the most of each opportunity.
+            <br /><br />
+            With a problem-solving mindset, I tackle challenges—whether simple or complex—with enthusiasm and
+            dedication. I strive to find the best solutions in every scenario, be it business, management, planning, or
+            any other area. Solving problems and devising innovative solutions is not just a skill but a passion I bring
+            to every endeavor.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Internships</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon-invert" />
+              <div>
+                <h3>Siemens DISW</h3>
+                <p>Software Engineer Intern</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon-invert" />
+              <div>
+                <h3>YoShops</h3>
+                <p>Data Science Intern</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon-invert" />
+              <div>
+                <h3>Tata Autocomp</h3>
+                <p>Data Science Intern</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Certificates</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon-invert" class="icon-invert" />
+              <div>
+                <h3>Google</h3>
+                <p>Data Analytics Specialization</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon-invert" class="icon-invert" />
+              <div>
+                <h3>UC San Diego</h3>
+                <p>Algorithmic Toolbox</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon-invert" class="icon-invert" />
+              <div>
+                <h3>Hackerrank</h3>
+                <p>Problem Solving Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Skills</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon-invert" class="icon-invert" />
+              <div>
+                <h3>C++</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon-invert" class="icon-invert" />
+              <div>
+                <h3>Python</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon-invert" class="icon-invert" />
+              <div>
+                <h3>HTML/CSS</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon-invert" class="icon-invert" />
+              <div>
+                <h3>SQL</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon-invert" class="icon-invert" />
+              <div>
+                <h3>Scikit-Learn</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon-invert" class="icon-invert" />
+              <div>
+                <h3>Tensorflow</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse Some of My</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <!-- <div class="article-container">
+            <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+          </div> -->
+          <h2 class="experience-sub-title project-title">GMail Spam Filter using ML</h2>
+          <p>I created a spam filter using the Naive Bayes algorithm, trained on labeled email data. After evaluating
+            its performance, I deployed the filter to a Gmail account via Google Cloud, enabling real-time spam
+            detection. The system was monitored and optimized to adapt to evolving spam tactics</p> <br />
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/Udaydsmls/Email-Spam-Filter-Using-ML')">
+              Github
+            </button>
+            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Github
+            </button> -->
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">Encrypting an Image using a Hilbert Curves</h2>
+          <p>In this project, I used the Hilbert curve to transform an image into a text file, encoding the image's data
+            in a sequential manner. Additionally, I also applied Discrete Wavelet Transform (DWT) to remove any
+            embedded steganography, ensuring the resulting text file is free from hidden data</p> <br />
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/Udaydsmls/Encrypting-an-image-using-a-Hilbert-curve')">
+              Github
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">Testing Different Models for Stock Prediction</h2>
+          <p>In this project, I evaluated several models to predict stock prices, including ARIMA for time series
+            forecasting, LSTM networks for capturing long-term dependencies, Linear Regression for a straightforward
+            approach, and Gradient Boosting for its ensemble learning capabilities. Each model was tested for accuracy
+            and effectiveness in stock price prediction. </p> <br />
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/Udaydsmls/Testing-Different-Models-for-Stock-Prediction')">
+              Github
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:udayds12mld@gmail.com">udayds12mld@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/uday-sonawane-0b25261b3/" target="_blank">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </footer>
+  <script src="script.js"></script>
 </body>
+
+</html>
