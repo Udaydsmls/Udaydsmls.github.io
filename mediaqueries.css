@@ -1,103 +1,153 @@
-@media screen and (max-width: 1400px) {
-  #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
+/* ======== TABLET / SMALL DESKTOP ======== */
+@media screen and (max-width: 1100px) {
+  nav {
+    padding: 1rem 2rem;
   }
-  .about-containers {
-    flex-wrap: wrap;
+  .profile__inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 3rem;
   }
-  #contact,
-  #projects {
-    height: fit-content;
+  .profile__left {
+    order: 2;
+  }
+  .profile__right {
+    order: 1;
+  }
+  .badge,
+  .btn-container,
+  #socials-container {
+    justify-content: center;
+  }
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .profile-pic-wrap {
+    width: 280px;
+    height: 280px;
+  }
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+  .edu-grid {
+    grid-template-columns: 1fr;
+  }
+  .skill-cats {
+    grid-template-columns: 1fr;
+  }
+  .project-card--feature {
+    grid-column: auto;
   }
 }
 
-@media screen and (max-width: 1200px) {
+/* ======== MOBILE NAV BREAKPOINT ======== */
+@media screen and (max-width: 900px) {
   #desktop-nav {
     display: none;
   }
   #hamburger-nav {
     display: flex;
   }
-  #experience,
-  .experience-details-container {
-    margin-top: 2rem;
-  }
-  #profile,
-  .section-container {
-    display: block;
-  }
-  .arrow {
-    display: none;
-  }
-  section,
-  .section-container {
-    height: fit-content;
+}
+
+/* ======== PHONE ======== */
+@media screen and (max-width: 600px) {
+  nav {
+    padding: 0.85rem 1.25rem;
   }
   section {
-    margin: 0 5%;
+    padding: 4.5rem 1.25rem 3rem;
   }
-  .section__pic-container {
-    width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
+  #profile {
+    padding-top: 6rem;
   }
-  .about-containers {
-    margin-top: 0;
+  .hero-title {
+    font-size: 2.75rem;
+  }
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+  .hero-description {
+    font-size: 0.95rem;
+  }
+  .btn {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.9rem;
+  }
+  .profile-pic-wrap {
+    width: 220px;
+    height: 220px;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+  .timeline {
+    padding-left: 1.75rem;
+  }
+  .timeline__dot {
+    left: -1.75rem;
+    width: 12px;
+    height: 12px;
+    top: 1.65rem;
+  }
+  .timeline__card {
+    padding: 1.25rem;
+  }
+  .achievement-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  .edu-card {
+    padding: 1.5rem;
+  }
+  .edu-card__gpa {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .skill-cat {
+    padding: 1.5rem;
+  }
+  .skill-tiles {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.65rem;
+  }
+  .skill-tile img,
+  .skill-tile__mono {
+    width: 28px;
+    height: 28px;
+  }
+  .skill-tile span:not(.skill-tile__mono) {
+    font-size: 0.7rem;
+  }
+  .marquee__track {
+    font-size: 0.95rem;
+    gap: 1.25rem;
+  }
+  .project-card {
+    padding: 1.5rem;
+  }
+  .project-card__title {
+    font-size: 1.25rem;
+  }
+  .project-card__top {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .scroll-indicator {
+    display: none;
+  }
+  footer .nav-links {
+    gap: 1rem;
   }
 }
 
-@media screen and (max-width: 600px) {
-  #contact,
-  footer {
-    height: 40vh;
-  }
-  #profile {
-    height: 83vh;
-    margin-bottom: 0;
-  }
-  article {
-    font-size: 1rem;
-  }
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
-  }
-  .about-containers,
-  .contact-info-upper-container,
-  .btn-container {
-    flex-wrap: wrap;
-  }
-  .contact-info-container {
-    margin: 0;
-  }
-  .contact-info-container p,
-  .nav-links li a {
-    font-size: 1rem;
-  }
-  .experience-sub-title {
-    font-size: 1.25rem;
-  }
-  .logo {
-    font-size: 1.5rem;
-  }
-  .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
-  }
-  .section__pic-container {
-    width: auto;
-    height: 46vw;
-    justify-content: center;
-  }
-  .section__text__p2 {
-    font-size: 1.25rem;
-  }
-  .title {
-    font-size: 2rem;
-  }
-  .text-container {
-    text-align: justify;
+/* ======== REDUCE BLUR ON LOW-POWER ======== */
+@media (max-width: 600px) {
+  .aurora__blob {
+    filter: blur(80px);
+    opacity: 0.4;
   }
 }
