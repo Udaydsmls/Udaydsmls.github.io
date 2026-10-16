@@ -9,6 +9,22 @@ function toggleMenu() {
 }
 
 // =========================================
+//  Light / dark theme toggle
+// =========================================
+function toggleTheme() {
+  const root = document.documentElement;
+  const next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+  if (next === "dark") {
+    root.setAttribute("data-theme", "dark");
+  } else {
+    root.removeAttribute("data-theme");
+  }
+  try {
+    localStorage.setItem("theme", next);
+  } catch (e) {}
+}
+
+// =========================================
 //  Typing effect for hero subtitle
 // =========================================
 (function typedRoles() {
